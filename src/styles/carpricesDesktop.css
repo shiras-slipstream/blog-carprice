@@ -1,0 +1,259 @@
+html {
+    overflow-y: scroll;
+    padding-right: 0px; /* Adjust this value based on your scrollbar width */
+}
+
+
+/* initial setup begins */
+:root {
+    --primary: #275ba7;
+    --secondary: #24272c;
+    --light: #77cdf2;
+    --black: #000;
+    --white: #fff;
+    --rating: #ffa236;
+    --grey: #80818b;
+  }
+  
+  .bg-primary {
+    background-color: var(--primary) !important;
+  }
+  
+  * {
+    font-family: Gilroy;
+  }
+  
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+/* initial setup ends */
+
+
+
+
+/* ---------------------------------Blog navbar style begins--------------------------*/
+
+
+
+
+
+nav{
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    position: sticky;
+    top: 30px;
+    left: 0;
+    z-index: 1000;
+}
+.date{
+    background-color: gray;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+  }
+  
+  nav ul li {
+      display: inline-block;
+      position: relative; 
+      margin-right: 16px; /* Default margin */
+      padding-right: 16px; /* Placeholder for the scrollbar */
+    
+  }
+  nav ul li:not(:hover) {
+    padding-right: 16px; /* Keep the same padding as above */
+  }
+  
+  
+  nav ul li a {
+    display: block;
+    padding: 13px 13px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  @media(max-width:950px){
+
+    .navContents{
+    display: none;
+    }
+  }
+
+  
+  /* Dropdown menu styles */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 100px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    min-width: 230px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .dropdown{
+
+  }
+  
+  
+  nav ul li:hover > a {
+    color: yellow;
+    border-radius: 10px;
+    background-color: rgb(91, 91, 255);
+  }
+
+
+
+  /* Styling for nested dropdowns */
+.nested-dropdown-menu {
+  padding: 2px;
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 205px;
+    background-color: #333;
+
+    min-width: 250px;
+    z-index: 1;
+  }
+  
+  .nested-dropdown:hover .nested-dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    /* Add additional styling for positioning, background color, etc. */
+  }
+  
+  .dropdown-menu.show {
+    display: block; /* Show the dropdown when the 'show' class is applied */
+    /* Add styling for the shown dropdown */
+  }
+/* -------------------------------------Blog navbar style ends-------------------------------------------*/
+
+/*---------------------- swiper begins ------------------------*/
+ /* .swiper {
+    width: 600px;
+
+  } */
+
+  /* .swiper-scrollbar{
+    display: none;
+  }  */
+
+  .border-dotted{
+    border-bottom: 1px dashed gray;
+  }
+  .carouselWidth{
+    width: 400px;
+  }
+
+  /* ----------------------------swiper ends------------------------- */
+
+  /* Trending section begins*/
+
+  /* .imageFullWidth{
+    width: 100%;
+  }
+@media(max-width:850px){
+    .carouselRight{
+        display: none !important;
+    }
+} */
+  /* Trending Section ends */
+
+  /* freature newcar begins */
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+
+  .image-container {
+    position: relative;
+  }
+
+  .tag {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: rgb(66, 66, 255);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    color: white;
+    padding: 5px;
+
+    font-size: 12px;
+  }
+
+
+  .description {
+    padding: 15px;
+  }
+
+  .imageFullWidthWithTrans{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .imageFullWidth{
+    width: 100%;
+  }
+
+
+  .imageFullWidthWithTrans:hover{
+    scale: 1.1;
+  }
+
+
+
+
+  .description {
+    padding: 15px;
+  }
+  /* freature newcar ends */
+  
